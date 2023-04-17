@@ -32,5 +32,15 @@ body{
 }
 
 .bannerHeight{
-    height: calc(100vh - 5.72916666667vw);
+    /* height: calc(100vh - 5.72916666667vw); */
+    max-height: calc(-webkit-fill-available - 5.72916666667vw)
+
+}
+
+@media(max-width:768px){
+    .bannerHeight{
+        height: calc(100vh - 92px);
+        max-height: calc(-webkit-fill-available - 92px)
+    }
+    
 }
