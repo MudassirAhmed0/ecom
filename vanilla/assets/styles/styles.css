@@ -19,6 +19,7 @@
 body{
     font-family: 'Avenir';
     color: #0F0F0F;
+    background-color: #FBFBFC;
 }
 
 .dropdownShadow{
@@ -39,9 +40,18 @@ body{
 }
 
 .btn{
-    @apply px-[42.5px] md:px-[2.8vw] uppercase tracking-[0.7px] md:tracking-[0.09375vw] h-[50px] md:h-[3.64583333333vw]  text-[14px] md:text-[0.9375vw]  font-[700] flex items-center rounded-[35px] md:rounded-[1.82291666667vw]
+    @apply px-[42.5px] md:px-[2.8vw] min-w-[183px] md:min-w-[13.2291666667vw] uppercase tracking-[0.7px] md:tracking-[0.09375vw] h-[50px] md:h-[3.64583333333vw]  text-[14px] md:text-[0.9375vw]  font-[700] flex items-center justify-center rounded-[35px] md:rounded-[1.82291666667vw]
 }
+.secondHeading{
+    @apply text-[6.34517766497vw] leading-[30px] md:text-[3.64583333333vw] md:leading-[3.59375vw] font-[700]
+}
+.specialChracter{
+    @apply text-[40px] leading-[26px] md:text-[3.64583333333vw] md:leading-[3.59375vw] font-[700]
+}
+.para{
+ @apply  text-[4.07124681934vw] leading-[23px] md:text-[0.9375vw] md:leading-[1.35416666667vw]
 
+}
 @media(max-width:768px){
     .bannerHeight{
         height: calc(100vh - 92px);
