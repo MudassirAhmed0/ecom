@@ -10,6 +10,12 @@
 }
 @font-face {
     font-family: "Avenir";
+    src: url(../fonts/AvenirNextLTPro-UltLt.otf);
+    font-weight: 100;
+    font-display: block;
+}
+@font-face {
+    font-family: "Avenir";
     src: url(../fonts/AvenirNextLTPro-Demi.otf);
     font-weight: 700;
     font-display: block;
@@ -38,7 +44,12 @@ body{
     /* max-height: calc(-webkit-fill-available - 5.72916666667vw) */
 
 }
-
+.talentShadow{
+    box-shadow: 0px 3px 22px #DCE2F073;
+}
+.talentOverlay{
+    background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
+}
 .btn{
     @apply px-[42.5px] md:px-[2.8vw] min-w-[183px] md:min-w-[13.2291666667vw] uppercase tracking-[0.7px] md:tracking-[0.09375vw] h-[50px] md:h-[3.64583333333vw]  text-[14px] md:text-[0.9375vw]  font-[700] flex items-center justify-center rounded-[35px] md:rounded-[1.82291666667vw]
 }
@@ -52,9 +63,23 @@ body{
  @apply  text-[4.07124681934vw] leading-[23px] md:text-[0.9375vw] md:leading-[1.35416666667vw]
 
 }
+
+.swiper-button-next, .swiper-button-prev {
+     position: static; 
+     height: 1.25vw; 
+    width: 0.57291666666vw;
+     margin-top:0 
+}
+.swiper-button-lock{
+    display: block!important;
+}
+.categorySwiperOverlay{
+    background: transparent linear-gradient(180deg, #00000000 0%, #0000006B 52%, #000000 100%) 0% 0% no-repeat padding-box;
+}
 @media(max-width:768px){
     .bannerHeight{
         height: calc(100vh - 92px);
+
         /* max-height: calc(-webkit-fill-available - 92px) */
     }
     
