@@ -27,13 +27,15 @@
           />
         </a>
         <ul
-          class="flex items-center gap-x-[9.13705583756vw] md:gap-x-[2.60416666667vw] ml-[11.6751269036vw] md:ml-[4.375vw] uppercase font-[700] text-[3.55329949239vw] tracking-[0.0888324873vw] md:text-[0.83333333333vw] md:tracking-[0.04166666666vw]"
+          class="flex items-center gap-x-[9.13705583756vw] md:gap-x-[2.60416666667vw] ml-[11.6751269036vw] md:ml-[4.375vw] font-[700] text-[3.55329949239vw] tracking-[0.0888324873vw] md:text-[0.83333333333vw] md:tracking-[0.04166666666vw]"
         >
           <li class="group relative">
-            <span class="cursor-pointer hidden md:block">Find Talent</span>
-            <span class="cursor-pointer md:hidden">Browse</span>
+            <span class="cursor-pointer hidden md:block uppercase"
+              >Find Talent</span
+            >
+            <span class="cursor-pointer md:hidden uppercase">Browse</span>
             <ul
-              class="bg-white left-[1.8vw] md:group-hover:left-[1.5vw] transition-all duration-[500ms] opacity-0 md:group-hover:opacity-[1] flex flex-col text-[0.72916666666vw] font-[400] absolute p-[1.45833333333vw] dropdownShadow w-[11.71875vw] top-[2.90416666667vw] md:group-hover:top-[2.60416666667vw]"
+              class="bg-white left-[1.5vw] transition-all duration-[500ms] hidden md:group-hover:block flex flex-col text-[0.72916666666vw] font-[400] absolute p-[1.45833333333vw] dropdownShadow w-[11.71875vw] top-[2.60416666667vw]"
             >
               <span
                 class="w-[1.25vw] h-[1.25vw] top-[-0.625vw] dropdownTopShadow bg-white absolute"
@@ -41,48 +43,63 @@
               <span
                 class="w-[100%] h-[1.5vw] top-[0vw] left-0 bg-white absolute"
               ></span>
+              <span
+                class="w-[100%] h-[3.5vw] top-[-2vw] left-0 bg-transparent cursor-pointer absolute"
+              ></span>
               <li class="flex">
-                <a class="pb-[0.415vw]" href="#"> Actors </a>
+                <a class="pb-[0.415vw] hover:underline" href="#"> Actors </a>
               </li>
               <li class="flex">
-                <a class="py-[0.415vw]" href="#"> Artists </a>
+                <a class="py-[0.415vw] hover:underline" href="#"> Artists </a>
               </li>
               <li class="flex">
-                <a class="py-[0.415vw]" href="#"> Makeup Atrists </a>
+                <a class="py-[0.415vw] hover:underline" href="#">
+                  Makeup Atrists
+                </a>
               </li>
               <li class="flex">
-                <a class="py-[0.415vw]" href="#"> Videographers </a>
+                <a class="py-[0.415vw] hover:underline" href="#">
+                  Videographers
+                </a>
               </li>
               <li class="flex">
-                <a class="py-[0.415vw]" href="#"> Photographers </a>
+                <a class="py-[0.415vw] hover:underline" href="#">
+                  Photographers
+                </a>
               </li>
               <li class="flex">
-                <a class="py-[0.415vw]" href="#"> Models </a>
+                <a class="py-[0.415vw] hover:underline" href="#"> Models </a>
               </li>
               <li class="flex">
-                <a class="py-[0.415vw]" href="#"> Fashion Designers </a>
+                <a class="py-[0.415vw] hover:underline" href="#">
+                  Fashion Designers
+                </a>
               </li>
               <li class="flex">
-                <a class="py-[0.415vw]" href="#"> Agencies </a>
+                <a class="py-[0.415vw] hover:underline" href="#"> Agencies </a>
               </li>
               <li class="flex">
-                <a class="py-[0.415vw]" href="#"> Influencers </a>
+                <a class="py-[0.415vw] hover:underline" href="#">
+                  Influencers
+                </a>
               </li>
               <li class="flex">
-                <a class="pt-[0.415vw]" href="#"> Hair Stylists </a>
+                <a class="pt-[0.415vw] hover:underline" href="#">
+                  Hair Stylists
+                </a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#" class="hidden md:block">Find Work</a>
-            <a href="#" class="md:hidden"> Work</a>
+            <a href="#" class="hidden md:block uppercase">Find Work</a>
+            <a href="#" class="md:hidden uppercase"> Work</a>
           </li>
         </ul>
         <form class="ml-[3.125vw] w-[25.5208333333vw] hidden md:flex">
           <input
             type="text"
             placeholder="Search for jobs, talents or agencies"
-            class="w-full text-[0.83333333333vw] pb-[0.78125vw] pt-[0.83333333333vw] px-[1.19791666667vw] outline-black flex h-full rounded-[1.30208333333vw] text-[#B3B5BE] border border-[#DADCDE]"
+            class="w-full text-[0.83333333333vw] pb-[0.78125vw] pt-[0.83333333333vw] px-[1.19791666667vw] outline-none flex h-full rounded-[1.30208333333vw] text-[#0F0F0F] placeholder:text-[#B3B5BE] border border-[#DADCDE]"
           />
         </form>
         <ul class="items-center ml-auto hidden md:flex">
@@ -97,7 +114,7 @@
           <li>
             <a
               href="#"
-              class="uppercase pb-[0.78125vw] ml-[3.69791666667vw] pt-[0.83333333333vw] px-[1.53645833333vw] border border-black rounded-[1.82291666667vw] text-[0.83333333333vw] tracking-[0.0625vw]"
+              class="uppercase pb-[0.78125vw] ml-[3.69791666667vw] pt-[0.83333333333vw] px-[1.53645833333vw] border border-black rounded-[1.82291666667vw] text-[0.83333333333vw] tracking-[0.0625vw] hover:bg-black hover:text-white transform transition-all duration-[300ms]"
             >
               SIGN Up
             </a>
@@ -118,7 +135,7 @@
       <img
         src="./assets/images/home/banner.jpg"
         alt="Banner"
-        class="w-full h-full object-cover fixed pointer-events-none top-[92px] md:top-[5.72916666667vw] left-0"
+        class="w-full h-full object-cover fixed pointer-events-none top-[92px] md:top-[0] left-0"
       />
       <div
         class="mb-[26.7175572519vw] md:mb-[8.28125vw] items-center text-center md:text-left md:items-start flex flex-col text-white relative mx-[10.5597964377vw] md:mr-0 md:ml-[14.6354166667vw]"
@@ -147,24 +164,27 @@
       </div>
       <span
         class="hidden md:block para absolute right-[7.86458333333vw] text-white bottom-[3.69791666667vw] font-[700]"
-        >Are you a pro? <a href="#" class="font-[400]">Sign Up Free</a></span
+        >Are you a pro?
+        <a href="#" class="font-[400] hover:opacity-[0.8]">Sign Up </a></span
       >
     </section>
     <section class="relative bg-[#FBFBFC] pt-[7.60416666667vw]">
       <div
-        class="ml-[14.4791666667vw] mb-[4.01041666667vw] flex mr-[17.5520833333vw] items-center justify-between"
+        class="md:ml-[14.4791666667vw] mb-[30px] md:mb-[4.01041666667vw] gap-y-[24px] flex flex-col md:flex-row md:mr-[17.5520833333vw] items-center justify-between"
       >
-        <h4 class="secondHeading w-[20.0520833333vw]">Explore by category</h4>
+        <h4 class="secondHeading w-[55.3299492386vw] md:w-[20.0520833333vw]">
+          Explore by category
+        </h4>
         <div
-          class="w-[45.8333333333vw] pb-[1vw] border-[#DADCDE] border-b flex justify-end"
+          class="w-[68.9567430025vw] mx-[auto] md:mx-0 md:w-[45.8333333333vw] pb-[24px] md:pb-[1vw] border-[#DADCDE] border-b flex justify-center md:justify-end"
         >
-          <div class="flex gap-x-[0.55vw]">
+          <div class="flex gap-x-[8px] md:gap-x-[0.55vw]">
             <img
               src="./assets/images/icons/chevron.svg"
               alt="Chevron"
               class="transform rotate-[90deg] swiper-button-prev"
             />
-            <span class="text-[0.83333333333vw] text-[#B3B5BE]">Drag</span>
+            <span class="md:text-[0.83333333333vw] text-[#B3B5BE]">Drag</span>
             <img
               src="./assets/images/icons/chevron.svg"
               alt="Chevron"
@@ -173,10 +193,11 @@
           </div>
         </div>
       </div>
-      <div class="swiper homeSwiper w-full pl-[8.4375vw] pr-[68vw]">
+      <div class="swiper homeSwiper w-full md:pl-[8.4375vw] md:pr-[68vw]">
         <div class="swiper-wrapper">
-          <div
-            class="swiper-slide flex items-end w-[22.9166666667vw] overflow-hidden h-[16.6666666667vw] relative rounded-[1.25vw]"
+          <a
+            href="#"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
           >
             <img
               src="./assets/images/home/category1.jpg"
@@ -184,16 +205,21 @@
               class="absolute top-0 left-0 w-full h-full object-cover"
             />
             <span
-              class="categorySwiperOverlay h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
-            <div class="flex flex-col p-[2.44791666667vw] text-white relative">
-              <h5 class="mb-[0.36458333333vw] text-[1.5625vw] font-[700]">
+            <div
+              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
+            >
+              <h5
+                class="mb-[0.36458333333vw] text-[20px] md:text-[1.5625vw] font-[700]"
+              >
                 Makeup Artists
               </h5>
             </div>
-          </div>
-          <div
-            class="swiper-slide flex items-end w-[22.9166666667vw] overflow-hidden h-[16.6666666667vw] relative rounded-[1.25vw]"
+          </a>
+          <a
+            href="#"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
           >
             <img
               src="./assets/images/home/category2.jpg"
@@ -201,15 +227,18 @@
               class="absolute top-0 left-0 w-full h-full object-cover"
             />
             <span
-              class="categorySwiperOverlay h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
-            <div class="flex flex-col p-[2.44791666667vw] text-white relative">
-              <h5 class="text-[1.5625vw] font-[700]">Models</h5>
-              <span class="font-[100]"> 948 </span>
+            <div
+              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
+            >
+              <h5 class="text-[20px] md:text-[1.5625vw] font-[700]">Models</h5>
+              <span class="font-[100] hidden md:block para"> 948 </span>
             </div>
-          </div>
-          <div
-            class="swiper-slide flex items-end w-[22.9166666667vw] overflow-hidden h-[16.6666666667vw] relative rounded-[1.25vw]"
+          </a>
+          <a
+            href="#"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
           >
             <img
               src="./assets/images/home/category3.jpg"
@@ -217,16 +246,21 @@
               class="absolute top-0 left-0 w-full h-full object-cover"
             />
             <span
-              class="categorySwiperOverlay h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
-            <div class="flex flex-col p-[2.44791666667vw] text-white relative">
-              <h5 class="mb-[0.36458333333vw] text-[1.5625vw] font-[700]">
+            <div
+              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
+            >
+              <h5
+                class="mb-[0.36458333333vw] text-[20px] md:text-[1.5625vw] font-[700]"
+              >
                 Photographers
               </h5>
             </div>
-          </div>
-          <div
-            class="swiper-slide flex items-end w-[22.9166666667vw] overflow-hidden h-[16.6666666667vw] relative rounded-[1.25vw]"
+          </a>
+          <a
+            href="#"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
           >
             <img
               src="./assets/images/home/category4.jpg"
@@ -234,16 +268,21 @@
               class="absolute top-0 left-0 w-full h-full object-cover"
             />
             <span
-              class="categorySwiperOverlay h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
-            <div class="flex flex-col p-[2.44791666667vw] text-white relative">
-              <h5 class="mb-[0.36458333333vw] text-[1.5625vw] font-[700]">
+            <div
+              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
+            >
+              <h5
+                class="mb-[0.36458333333vw] text-[20px] md:text-[1.5625vw] font-[700]"
+              >
                 Film Makers
               </h5>
             </div>
-          </div>
-          <div
-            class="swiper-slide flex items-end w-[22.9166666667vw] overflow-hidden h-[16.6666666667vw] relative rounded-[1.25vw]"
+          </a>
+          <a
+            href="#"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
           >
             <img
               src="./assets/images/home/category1.jpg"
@@ -251,16 +290,21 @@
               class="absolute top-0 left-0 w-full h-full object-cover"
             />
             <span
-              class="categorySwiperOverlay h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
-            <div class="flex flex-col p-[2.44791666667vw] text-white relative">
-              <h5 class="mb-[0.36458333333vw] text-[1.5625vw] font-[700]">
+            <div
+              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
+            >
+              <h5
+                class="mb-[0.36458333333vw] text-[20px] md:text-[1.5625vw] font-[700]"
+              >
                 Makeup Artists
               </h5>
             </div>
-          </div>
-          <div
-            class="swiper-slide flex items-end w-[22.9166666667vw] overflow-hidden h-[16.6666666667vw] relative rounded-[1.25vw]"
+          </a>
+          <a
+            href="#"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
           >
             <img
               src="./assets/images/home/category2.jpg"
@@ -268,15 +312,18 @@
               class="absolute top-0 left-0 w-full h-full object-cover"
             />
             <span
-              class="categorySwiperOverlay h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
-            <div class="flex flex-col p-[2.44791666667vw] text-white relative">
-              <h5 class="text-[1.5625vw] font-[700]">Models</h5>
+            <div
+              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
+            >
+              <h5 class="text-[20px] md:text-[1.5625vw] font-[700]">Models</h5>
               <span class="font-[100]"> 948 </span>
             </div>
-          </div>
-          <div
-            class="swiper-slide flex items-end w-[22.9166666667vw] overflow-hidden h-[16.6666666667vw] relative rounded-[1.25vw]"
+          </a>
+          <a
+            href="#"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
           >
             <img
               src="./assets/images/home/category3.jpg"
@@ -284,16 +331,21 @@
               class="absolute top-0 left-0 w-full h-full object-cover"
             />
             <span
-              class="categorySwiperOverlay h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
-            <div class="flex flex-col p-[2.44791666667vw] text-white relative">
-              <h5 class="mb-[0.36458333333vw] text-[1.5625vw] font-[700]">
+            <div
+              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
+            >
+              <h5
+                class="mb-[0.36458333333vw] text-[20px] md:text-[1.5625vw] font-[700]"
+              >
                 Photographers
               </h5>
             </div>
-          </div>
-          <div
-            class="swiper-slide flex items-end w-[22.9166666667vw] overflow-hidden h-[16.6666666667vw] relative rounded-[1.25vw]"
+          </a>
+          <a
+            href="#"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
           >
             <img
               src="./assets/images/home/category4.jpg"
@@ -301,24 +353,28 @@
               class="absolute top-0 left-0 w-full h-full object-cover"
             />
             <span
-              class="categorySwiperOverlay h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
-            <div class="flex flex-col p-[2.44791666667vw] text-white relative">
-              <h5 class="mb-[0.36458333333vw] text-[1.5625vw] font-[700]">
+            <div
+              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
+            >
+              <h5
+                class="mb-[0.36458333333vw] text-[20px] md:text-[1.5625vw] font-[700]"
+              >
                 Film Makers
               </h5>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
     <section
-      class="relative bg-[#FBFBFC] pt-[8.48958333333vw] pb-[7.39583333333vw]"
+      class="relative bg-[#FBFBFC] pt-[53px] md:pt-[8.48958333333vw] pb-[7.39583333333vw]"
     >
       <div
-        class="w-[79.375vw] mx-auto relative flex gap-x-[6.38020833333vw] items-center"
+        class="md:w-[79.375vw] mx-auto relative flex-col-reverse md:flex-row flex gap-x-[6.38020833333vw] items-center"
       >
-        <div class="w-[43.4166666667vw]">
+        <div class="w-[43.4166666667vw] relative hidden md:block">
           <div
             class="w-[26.0416666667vw] flex items-end h-[34.375vw] relative rounded-[1.5625vw] mb-[4.6875vw] overflow-hidden"
           >
@@ -366,21 +422,31 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-center md:items-start">
           <img
             src="./assets/images/icons/verified-filled.svg"
             alt="Verified"
-            class="w-[3.24479166667vw]"
+            class="w-[50px] md:w-[3.24479166667vw]"
           />
-          <h5 class="text-[1.25vw] mt-[0.9vw]">CHAT WITH REAL</h5>
-          <h4 class="secondHeading">Verified Talents</h4>
+          <h5
+            class="text-[14px] tracking-[0.35px] md:text-[1.25vw] mt-[6px] md:mt-[0.9vw]"
+          >
+            CHAT WITH REAL
+          </h5>
+          <h4
+            class="text-[30px] leading-[42px] md:text-[3.64583333333vw] md:leading-[3.59375vw] font-[700]"
+          >
+            Verified Talents
+          </h4>
           <p
-            class="text-[1.19791666667vw] max-w-[25.5729166667vw] leading-[1.77083333333vw] mt-[0.55vw] mb-[2.2vw]"
+            class="text-[18px] md:text-[1.19791666667vw] max-w-[70vw] md:max-w-[25.5729166667vw] leading-[24px] mx-auto md:mx-0 md:leading-[1.77083333333vw] mt-[18px] text-center md:text-left md:mt-[0.55vw] md:mb-[2.2vw]"
           >
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod
           </p>
-          <a href="" class="btn bg-[#0F0F0F] text-white"> Start Browsing </a>
+          <div class="hidden md:block">
+            <a href="" class="btn bg-[#0F0F0F] text-white"> Start Browsing </a>
+          </div>
         </div>
       </div>
     </section>
@@ -587,7 +653,7 @@
       class="relative md:h-[39.0625vw] justify-center flex-wrap md:flex-nowrap flex text-center bg-[#FBFBFC] gap-y-[19px] z-[5]"
     >
       <div
-        class="w-[91.6030534351vw] md:w-[50%] min-h-[82.2335025381vw] md:min-h-[auto] h-full flex items-center justify-center pb-[1.2vw] bg-[#F4F4F7] md:bg-transparent"
+        class="w-[91.6030534351vw] md:w-[50%] min-h-[82.2335025381vw] md:min-h-[auto] h-full flex items-center justify-center pb-[1.2vw] bg-[#F4F4F7] md:bg-transparent transform transition-all duration-[500ms] md:hover:bg-[#F4F4F7]"
       >
         <div
           data-aos="fade"
@@ -608,7 +674,7 @@
         </div>
       </div>
       <div
-        class="w-[91.6030534351vw] md:w-[50%] min-h-[82.2335025381vw] md:min-h-[auto] h-full flex items-center justify-center pb-[1.2vw] bg-[#F4F4F7]"
+        class="w-[91.6030534351vw] md:w-[50%] min-h-[82.2335025381vw] md:min-h-[auto] h-full flex items-center justify-center pb-[1.2vw] bg-[#F4F4F7] md:bg-transparent transform transition-all duration-[500ms] md:hover:bg-[#F4F4F7]"
       >
         <div
           data-aos="fade"
@@ -630,7 +696,7 @@
         </div>
       </div>
     </section>
-    <footer class="relative bg-[#FBFBFC] pt-[8.02083333333vw]">
+    <footer class="hidden md:block relative bg-[#FBFBFC] pt-[8.02083333333vw]">
       <div
         class="ml-[8.85416666667vw] mr-[5.98958333333vw] flex border-[#E9E9E9] pb-[3.95833333333vw] border-b"
       >

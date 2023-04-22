@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontWeight: ["responsive", "hover", "focus"],
       opacity: ["hover"],
+      display: ["hover"],
       borderColor: ["hover", "focus"],
       margin: ["first", "last"],
       backgroundColor: ["odd", "even"],

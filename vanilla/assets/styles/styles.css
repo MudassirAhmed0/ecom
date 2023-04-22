@@ -54,7 +54,7 @@ body{
     @apply px-[42.5px] md:px-[2.8vw] min-w-[183px] md:min-w-[13.2291666667vw] uppercase tracking-[0.7px] md:tracking-[0.09375vw] h-[50px] md:h-[3.64583333333vw]  text-[14px] md:text-[0.9375vw]  font-[700] flex items-center justify-center rounded-[35px] md:rounded-[1.82291666667vw]
 }
 .secondHeading{
-    @apply text-[6.34517766497vw] leading-[30px] md:text-[3.64583333333vw] md:leading-[3.59375vw] font-[700]
+    @apply text-[10.152284264vw] leading-[10.152284264vw] md:text-[3.64583333333vw] md:leading-[3.59375vw] font-[700]
 }
 .specialChracter{
     @apply text-[40px] leading-[26px] md:text-[3.64583333333vw] md:leading-[3.59375vw] font-[700]
@@ -79,8 +79,12 @@ body{
 @media(max-width:768px){
     .bannerHeight{
         height: calc(100vh - 92px);
-
+        
         /* max-height: calc(-webkit-fill-available - 92px) */
     }
     
+    .swiper-button-next, .swiper-button-prev {
+          height: auto; 
+       width: auto; 
+   }
 }

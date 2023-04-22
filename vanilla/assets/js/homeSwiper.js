@@ -1,17 +1,13 @@
-let swiperGap =
-  window.innerWidth > 768
-    ? (window.innerWidth / 100) * 2.60416666667
-    : (window.innerWidth / 100) * 4;
+let isCenter = window.innerWidth > 768;
 
-window.addEventListener("resize", () => {
-  swiperGap =
-    window.innerWidth > 768
-      ? (window.innerWidth / 100) * 2.60416666667
-      : (window.innerWidth / 100) * 4;
-});
 const swiper = new Swiper(".homeSwiper", {
   slidesPerView: "auto",
-  spaceBetween: swiperGap,
+
+  grabCursor: true,
+  spaceBetween: 0,
+  centeredSlides: !isCenter,
+  loop: !isCenter,
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -22,8 +18,3 @@ const swiper = new Swiper(".homeSwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
-setTimeout(function () {
-  swiper.update(true);
-  swiper.slideTo(0, 0);
-}, 250);
