@@ -3,11 +3,14 @@ var scrollableElement = document.body; //document.getElementById('scrollableElem
 
 scrollableElement.addEventListener("wheel", checkScrollDirection);
 
+const nav = document.querySelector("nav");
 function checkScrollDirection(event) {
   if (checkScrollDirectionIsUp(event)) {
-    console.log("UP");
+    nav.classList.remove("zeroH");
   } else {
-    console.log("Down");
+    if (window.scrollY > 200) {
+      nav.classList.add("zeroH");
+    }
   }
 }
 

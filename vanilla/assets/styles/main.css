@@ -1065,6 +1065,10 @@ video {
   height: 100%;
 }
 
+.max-h-\[92px\] {
+  max-height: 92px;
+}
+
 .min-h-\[82\.2335025381vw\] {
   min-height: 82.2335025381vw;
 }
@@ -3189,6 +3193,10 @@ body{
   box-shadow: 0px 3px 22px #DCE2F073;
 }
 
+.zeroH{
+  max-height: 0!important;
+}
+
 .talentOverlay{
   background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
 }
@@ -3206,6 +3214,9 @@ body{
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.7px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 @media (min-width: 768px) {
@@ -3230,6 +3241,9 @@ body{
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.7px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 @media (min-width: 768px) {
@@ -3367,13 +3381,27 @@ body{
   color: rgb(179 181 190 / var(--tw-text-opacity));
 }
 
+.hover\:bg-\[\#0F0F0F\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 15 15 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-black:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-transparent:hover {
+  background-color: transparent;
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-\[\#0F0F0F\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(15 15 15 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
@@ -3553,6 +3581,10 @@ body{
 
   .md\:h-\[5\.72916666667vw\] {
     height: 5.72916666667vw;
+  }
+
+  .md\:max-h-\[5\.72916666667vw\] {
+    max-height: 5.72916666667vw;
   }
 
   .md\:min-h-\[auto\] {
