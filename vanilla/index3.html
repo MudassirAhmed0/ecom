@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/styles/aos.css" />
     <link rel="stylesheet" href="./assets/styles/main.css" />
-    <link rel="stylesheet" href="./assets/styles/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./assets/styles/owl.theme.default.min.css" />
     <title>Home - Pix Cover</title>
   </head>
   <body>
     <nav
-      class="h-[92px] z-[55] absolute w-full top-0 left-0 md:h-[5.72916666667vw] bg-white px-[8.88324873096vw] md:px-[5.88541666667vw] flex items-center"
+      class="h-[92px] z-[55] fixed w-full top-0 left-0 md:h-[5.72916666667vw] bg-white px-[8.88324873096vw] md:px-[5.88541666667vw] flex items-center"
     >
       <div class="ml-[1.45833333333vw] flex items-center w-full">
         <a href="./" class="w-[11.385786802vw] md:w-[13.125vw]">
@@ -134,9 +133,9 @@
       class="bannerHeight flex items-end overflow-hidden relative mt-[92px] md:mt-[5.72916666667vw]"
     >
       <img
-        src="./assets/images/home/banner.webp"
+        src="./assets/images/home/banner.jpg"
         alt="Banner"
-        class="w-full h-full object-cover absolute pointer-events-none top-[92px] md:top-[0] left-0"
+        class="w-full h-full object-cover fixed pointer-events-none top-[92px] md:top-[0] left-0"
       />
       <div
         class="mb-[26.7175572519vw] md:mb-[8.28125vw] items-center text-center md:text-left md:items-start flex flex-col text-white relative mx-[10.5597964377vw] md:mr-0 md:ml-[14.6354166667vw]"
@@ -158,14 +157,9 @@
           href="#"
           data-aos="fade"
           data-aos-delay="400"
-          class="btn2 gap-x-[4px] bg-[#0F0F0F] group w-[13.0208333333vw] text-white md:bg-white flex items-center justify-center md:text-[#0F0F0F] mt-[7.12468193384vw] md:mt-[4.21875vw]"
+          class="btn bg-[#0F0F0F] text-white md:bg-white md:text-[#0F0F0F] mt-[7.12468193384vw] md:mt-[4.21875vw]"
         >
           Get Started
-          <img
-            src="./assets/images/icons/arrow.svg"
-            alt="Arrow"
-            class="w-[1.5vw] hidden group-hover:block"
-          />
         </a>
       </div>
       <span
@@ -188,29 +182,27 @@
             <img
               src="./assets/images/icons/chevron.svg"
               alt="Chevron"
-              class="transform cursor-pointer rotate-[90deg] swiper-button-prev owl-carousel__prev"
+              class="transform rotate-[90deg] swiper-button-prev"
             />
-            <span class="md:text-[0.83333333333vw] text-[#000]"
-              >Drag or click the arrows</span
-            >
+            <span class="md:text-[0.83333333333vw] text-[#B3B5BE]">Drag</span>
             <img
               src="./assets/images/icons/chevron.svg"
               alt="Chevron"
-              class="transform cursor-pointer rotate-[-90deg] swiper-button-next owl-carousel__next"
+              class="transform rotate-[-90deg] swiper-button-next"
             />
           </div>
         </div>
       </div>
-      <div class="relative carousel-wrapper group">
-        <div class="owl-carousel owl-theme">
+      <div class="swiper homeSwiper w-full md:pl-[8.4375vw] md:pr-[68vw]">
+        <div class="swiper-wrapper">
           <a
             href="#"
-            class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
           >
             <img
-              src="./assets/images/home/category1.webp"
+              src="./assets/images/home/category1.jpg"
               alt="Category"
-              class="w-full h-full object-cover absolute"
+              class="absolute top-0 left-0 w-full h-full object-cover"
             />
             <span
               class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
@@ -227,12 +219,75 @@
           </a>
           <a
             href="#"
-            class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
           >
             <img
-              src="./assets/images/home/category2.webp"
+              src="./assets/images/home/category2.jpg"
               alt="Category"
-              class="w-full h-full object-cover absolute"
+              class="absolute top-0 left-0 w-full h-full object-cover"
+            />
+            <span
+              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
+            ></span>
+            <div
+              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
+            >
+              <h5 class="text-[20px] md:text-[1.5625vw] font-[700]">Models</h5>
+              <span class="font-[100] hidden md:block para"> 948 </span>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
+          >
+            <img
+              src="./assets/images/home/category3.jpg"
+              alt="Category"
+              class="absolute top-0 left-0 w-full h-full object-cover"
+            />
+            <span
+              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
+            ></span>
+            <div
+              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
+            >
+              <h5
+                class="mb-[0.36458333333vw] text-[20px] md:text-[1.5625vw] font-[700]"
+              >
+                Photographers
+              </h5>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
+          >
+            <img
+              src="./assets/images/home/category4.jpg"
+              alt="Category"
+              class="absolute top-0 left-0 w-full h-full object-cover"
+            />
+            <span
+              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
+            ></span>
+            <div
+              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
+            >
+              <h5
+                class="mb-[0.36458333333vw] text-[20px] md:text-[1.5625vw] font-[700]"
+              >
+                Film Makers
+              </h5>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
+          >
+            <img
+              src="./assets/images/home/category1.jpg"
+              alt="Category"
+              class="absolute top-0 left-0 w-full h-full object-cover"
             />
             <span
               class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
@@ -249,12 +304,31 @@
           </a>
           <a
             href="#"
-            class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
           >
             <img
-              src="./assets/images/home/category3.webp"
+              src="./assets/images/home/category2.jpg"
               alt="Category"
-              class="w-full h-full object-cover absolute"
+              class="absolute top-0 left-0 w-full h-full object-cover"
+            />
+            <span
+              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
+            ></span>
+            <div
+              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
+            >
+              <h5 class="text-[20px] md:text-[1.5625vw] font-[700]">Models</h5>
+              <span class="font-[100]"> 948 </span>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
+          >
+            <img
+              src="./assets/images/home/category3.jpg"
+              alt="Category"
+              class="absolute top-0 left-0 w-full h-full object-cover"
             />
             <span
               class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
@@ -265,18 +339,18 @@
               <h5
                 class="mb-[0.36458333333vw] text-[20px] md:text-[1.5625vw] font-[700]"
               >
-                Makeup Artists
+                Photographers
               </h5>
             </div>
           </a>
           <a
             href="#"
-            class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
+            class="swiper-slide ml-[3.80710659898vw] md:ml-[2.60416666667vw] flex items-end w-[65.9898477157vw] md:w-[22.9166666667vw] overflow-hidden h-[83.5025380711vw] md:h-[16.6666666667vw] relative rounded-[24px] md:rounded-[1.25vw]"
           >
             <img
-              src="./assets/images/home/category4.webp"
+              src="./assets/images/home/category4.jpg"
               alt="Category"
-              class="w-full h-full object-cover absolute"
+              class="absolute top-0 left-0 w-full h-full object-cover"
             />
             <span
               class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
@@ -287,62 +361,11 @@
               <h5
                 class="mb-[0.36458333333vw] text-[20px] md:text-[1.5625vw] font-[700]"
               >
-                Makeup Artists
-              </h5>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
-          >
-            <img
-              src="./assets/images/home/category2.webp"
-              alt="Category"
-              class="w-full h-full object-cover absolute"
-            />
-            <span
-              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
-            ></span>
-            <div
-              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
-            >
-              <h5
-                class="mb-[0.36458333333vw] text-[20px] md:text-[1.5625vw] font-[700]"
-              >
-                Makeup Artists
-              </h5>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
-          >
-            <img
-              src="./assets/images/home/category1.webp"
-              alt="Category"
-              class="w-full h-full object-cover absolute"
-            />
-            <span
-              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
-            ></span>
-            <div
-              class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
-            >
-              <h5
-                class="mb-[0.36458333333vw] text-[20px] md:text-[1.5625vw] font-[700]"
-              >
-                Makeup Artists
+                Film Makers
               </h5>
             </div>
           </a>
         </div>
-        <span
-          class="absolute flipIt2 opacity-0 top-[8vw] right-[20vw] z-[5] rounded-[50%] cursor-pointer owl-carousel__next transition-all duration-[500ms] group-hover:opacity-[1] w-[5.05208333333vw] h-[5.05208333333vw] bg-[#fff] flex items-center justify-center"
-          ><img
-            src="./assets/images/icons/arrow.svg"
-            alt="Arrow"
-            class="w-[2.5vw] flipIt transition-all duration-[500ms]"
-        /></span>
       </div>
     </section>
     <section
@@ -356,7 +379,7 @@
             class="w-[26.0416666667vw] flex items-end h-[34.375vw] relative rounded-[1.5625vw] mb-[4.6875vw] overflow-hidden"
           >
             <img
-              src="./assets/images/home/jakob-owens-DQPP9rVLYGQ-unsplash.webp"
+              src="./assets/images/home/jakob-owens-DQPP9rVLYGQ-unsplash.jpg"
               alt="Verified Talent"
               class="w-full h-full object-cover absolute"
             />
@@ -379,7 +402,7 @@
             class="w-[26.0416666667vw] flex items-end h-[34.375vw] rounded-[1.5625vw] left-[17.1875vw] top-[4.6875vw] overflow-hidden talentShadow absolute"
           >
             <img
-              src="./assets/images/home/dom-hill-nimElTcTNyY-unsplash.webp"
+              src="./assets/images/home/dom-hill-nimElTcTNyY-unsplash.jpg"
               alt="Verified Talent"
               class="w-full h-full object-cover absolute"
             />
@@ -756,9 +779,9 @@
         </ul>
       </div>
     </footer>
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/homeSwiper.js"></script>
   </body>
 </html>

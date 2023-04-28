@@ -1,4 +1,4 @@
-AOS.init({ once: true });
+// AOS.init({ once: true });
 var scrollableElement = document.body; //document.getElementById('scrollableElement');
 
 scrollableElement.addEventListener("wheel", checkScrollDirection);

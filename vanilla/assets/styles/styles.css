@@ -21,10 +21,9 @@
     font-display: block;
 }
 
-
 body{
     font-family: 'Avenir';
-    color: #0F0F0F;
+    color: #000;
     background-color: #FBFBFC;
 }
 
@@ -51,7 +50,10 @@ body{
     background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
 }
 .btn{
-    @apply px-[42.5px] md:px-[2.8vw] min-w-[183px] md:min-w-[13.2291666667vw] uppercase tracking-[0.7px] md:tracking-[0.09375vw] h-[50px] md:h-[3.64583333333vw]  text-[14px] md:text-[0.9375vw]  font-[700] flex items-center justify-center rounded-[35px] md:rounded-[1.82291666667vw]
+    @apply px-[42.5px] md:px-[2.8vw] min-w-[183px] md:min-w-[13.2291666667vw]  btn2
+}
+.btn2 {
+  @apply  uppercase tracking-[0.7px] md:tracking-[0.09375vw] h-[50px] md:h-[3.64583333333vw]  text-[14px] md:text-[0.9375vw]  font-[700] flex items-center justify-center rounded-[35px] md:rounded-[1.82291666667vw]
 }
 .secondHeading{
     @apply text-[10.152284264vw] leading-[10.152284264vw] md:text-[3.64583333333vw] md:leading-[3.59375vw] font-[700]
@@ -76,6 +78,10 @@ body{
 .categorySwiperOverlay{
     background: transparent linear-gradient(180deg, #00000000 0%, #0000006B 52%, #000000 100%) 0% 0% no-repeat padding-box;
 }
+.owl-nav{
+    opacity: 0;
+    pointer-events: none;
+}
 @media(max-width:768px){
     .bannerHeight{
         height: calc(100vh - 92px);
@@ -88,3 +94,6 @@ body{
        width: auto; 
    }
 }
+/* .owl-stage-outer{
+    padding-left: 8.4375vw;
+} */
