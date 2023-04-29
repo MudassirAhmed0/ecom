@@ -35,3 +35,29 @@ owl.on("changed.owl.carousel", function (event) {
     $(".flipIt2").click(() => owl.trigger("next.owl.carousel"));
   }
 });
+
+const meraLeft = document.querySelector(".meraLeft");
+const meraRight = document.querySelector(".meraRight");
+const carouselWrapper = document.querySelector(".carousel-wrapper");
+
+carouselWrapper.addEventListener("mousemove", (e) => {
+  if ((window.innerWidth - padding) / 2 > e.clientX) {
+    meraLeft.classList.remove("opacity-0");
+    meraLeft.classList.remove("pointer-events-none");
+    meraRight.classList.add("opacity-0");
+    meraRight.classList.add("pointer-events-none");
+    console.log("left");
+  } else {
+    meraLeft.classList.add("opacity-0");
+    meraLeft.classList.add("pointer-events-none");
+    meraRight.classList.remove("opacity-0");
+    meraRight.classList.remove("pointer-events-none");
+    console.log("right");
+  }
+});
+carouselWrapper.addEventListener("mouseout", () => {
+  meraLeft.classList.add("opacity-0");
+  meraLeft.classList.add("pointer-events-none");
+  meraRight.classList.add("opacity-0");
+  meraRight.classList.add("pointer-events-none");
+});

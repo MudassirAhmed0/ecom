@@ -12,7 +12,7 @@
   </head>
   <body>
     <nav
-      class="max-h-[92px] z-[55] fixed w-full overflow-hidden transition-all duration-[300ms] top-0 left-0 md:max-h-[5.72916666667vw] bg-white px-[8.88324873096vw] md:px-[5.88541666667vw] flex items-center"
+      class="max-h-[92px] z-[55] fixed w-full transition-all duration-[300ms] top-0 left-0 md:max-h-[5.72916666667vw] bg-white px-[8.88324873096vw] md:px-[5.88541666667vw] flex items-center"
     >
       <div
         class="ml-[1.45833333333vw] flex items-center w-full h-[92px] md:h-[5.72916666667vw]"
@@ -138,6 +138,7 @@
       <img
         src="./assets/images/home/banner.webp"
         alt="Banner"
+        loading="lazy"
         class="w-full h-full object-cover absolute pointer-events-none top-[92px] md:top-[0] left-0"
       />
       <div
@@ -160,14 +161,10 @@
           href="#"
           data-aos="fade"
           data-aos-delay="400"
-          class="btn2 gap-x-[4px] bg-[#0F0F0F] group w-[13.0208333333vw] text-white md:bg-white flex items-center justify-center md:text-[#0F0F0F] mt-[7.12468193384vw] md:mt-[4.21875vw]"
+          class="btn gap-x-[4px] bg-[#0F0F0F] group w-[13.0208333333vw] text-white md:bg-white flex items-center justify-center md:text-[#0F0F0F] mt-[7.12468193384vw] md:mt-[2.08333333333vw]"
         >
-          Get Started
-          <img
-            src="./assets/images/icons/arrow.svg"
-            alt="Arrow"
-            class="w-[1.5vw] hidden group-hover:block"
-          />
+          <span>Get Started</span>
+          <img src="./assets/images/icons/arrow.svg" alt="Arrow" />
         </a>
       </div>
       <span
@@ -210,6 +207,7 @@
             class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
           >
             <img
+              loading="lazy"
               src="./assets/images/home/category1.webp"
               alt="Category"
               class="w-full h-full object-cover absolute"
@@ -232,6 +230,7 @@
             class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
           >
             <img
+              loading="lazy"
               src="./assets/images/home/category2.webp"
               alt="Category"
               class="w-full h-full object-cover absolute"
@@ -254,6 +253,7 @@
             class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
           >
             <img
+              loading="lazy"
               src="./assets/images/home/category3.webp"
               alt="Category"
               class="w-full h-full object-cover absolute"
@@ -276,6 +276,7 @@
             class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
           >
             <img
+              loading="lazy"
               src="./assets/images/home/category4.webp"
               alt="Category"
               class="w-full h-full object-cover absolute"
@@ -298,6 +299,7 @@
             class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
           >
             <img
+              loading="lazy"
               src="./assets/images/home/category2.webp"
               alt="Category"
               class="w-full h-full object-cover absolute"
@@ -320,6 +322,7 @@
             class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
           >
             <img
+              loading="lazy"
               src="./assets/images/home/category1.webp"
               alt="Category"
               class="w-full h-full object-cover absolute"
@@ -338,12 +341,26 @@
             </div>
           </a>
         </div>
-        <span
+        <!-- <span
           class="absolute flipIt2 opacity-0 top-[8vw] right-[20vw] z-[5] rounded-[50%] cursor-pointer owl-carousel__next transition-all duration-[500ms] group-hover:opacity-[1] w-[5.05208333333vw] h-[5.05208333333vw] bg-[#fff] flex items-center justify-center"
           ><img
             src="./assets/images/icons/arrow.svg"
             alt="Arrow"
             class="w-[2.5vw] flipIt transition-all duration-[500ms]"
+        /></span> -->
+        <span
+          class="absolute meraRight opacity-0 pointer-events-none top-[7vw] right-[10vw] z-[5] rounded-[50%] cursor-pointer owl-carousel__next transition-all duration-[500ms] w-[5.05208333333vw] h-[5.05208333333vw] bg-[#fff] flex items-center justify-center"
+          ><img
+            src="./assets/images/icons/arrow.svg"
+            alt="Arrow"
+            class="w-[2.5vw] transition-all duration-[500ms]"
+        /></span>
+        <span
+          class="absolute meraLeft opacity-0 pointer-events-none top-[7vw] left-[15vw] z-[5] rounded-[50%] cursor-pointer owl-carousel__prev transition-all duration-[500ms] w-[5.05208333333vw] h-[5.05208333333vw] bg-[#fff] flex items-center justify-center"
+          ><img
+            src="./assets/images/icons/arrow.svg"
+            alt="Arrow"
+            class="w-[2.5vw] transition-all duration-[500ms] transform rotate-[-180deg]"
         /></span>
       </div>
     </section>
@@ -358,6 +375,7 @@
             class="w-[26.0416666667vw] flex items-end h-[34.375vw] relative rounded-[1.5625vw] mb-[4.6875vw] overflow-hidden"
           >
             <img
+              loading="lazy"
               src="./assets/images/home/jakob-owens-DQPP9rVLYGQ-unsplash.webp"
               alt="Verified Talent"
               class="w-full h-full object-cover absolute"
@@ -369,6 +387,7 @@
               <h5 class="text-[1.5625vw] font-[700] flex gap-x-[1.12vw]">
                 Alain B.
                 <img
+                  loading="lazy"
                   src="./assets/images/icons/verified-filled-white.svg"
                   alt="Verified"
                   class="w-[1.25vw]"
@@ -424,11 +443,9 @@
             nonumy eirmod
           </p>
           <div class="hidden md:block">
-            <a
-              href=""
-              class="btn bg-[#0F0F0F] text-white hover:bg-transparent border border-black hover:text-[#0F0F0F]"
-            >
-              Start Browsing
+            <a href="" class="btn bg-[#0F0F0F] text-white">
+              <span>Start Browsing</span>
+              <img src="./assets/images/icons/arrow-white.svg" alt="Arrow" />
             </a>
           </div>
         </div>
@@ -461,9 +478,10 @@
           <button
             data-aos="fade"
             data-aos-delay="400"
-            class="btn bg-[#0F0F0F] text-white hover:bg-transparent border border-black hover:text-[#0F0F0F]"
+            class="btn bg-[#0F0F0F] text-white"
           >
-            Hire Talents
+            <span> Hire Talents</span>
+            <img src="./assets/images/icons/arrow-white.svg" alt="Arrow" />
           </button>
         </div>
       </div>
@@ -651,9 +669,10 @@
             nonumy eirmod tempor invidunt ut labore et dolore
           </p>
           <button
-            class="btn bg-[#0F0F0F] text-[white] md:bg-transparent md:text-[#0F0F0F] hover:text-white hover:bg-[#0F0F0F] md:border md:border-black mt-[19px] md:mt-[2.34375vw]"
+            class="btn bg-[#0F0F0F] text-[white] md:bg-transparent md:text-[#0F0F0F] md:border md:border-black mt-[19px] md:mt-[2.34375vw]"
           >
-            HIRE A TALENT
+            <span>HIRE A TALENT</span>
+            <img src="./assets/images/icons/arrow.svg" alt="Arrow" />
           </button>
         </div>
       </div>
@@ -673,9 +692,10 @@
             nonumy eirmod tempor invidunt ut labore et dolore
           </p>
           <button
-            class="btn bg-[#0F0F0F] text-[white] mt-[19px] md:mt-[2.34375vw] hover:bg-transparent border border-black hover:text-[#0F0F0F]"
+            class="btn bg-[#0F0F0F] text-[white] mt-[19px] md:mt-[2.34375vw]"
           >
-            Get Hired
+            <span>Get Hired</span>
+            <img src="./assets/images/icons/arrow-white.svg" alt="Arrow" />
           </button>
         </div>
       </div>
