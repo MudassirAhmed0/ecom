@@ -3699,6 +3699,10 @@ body{
     max-width: 55vw;
   }
 
+  .md\:max-w-\[60vw\] {
+    max-width: 60vw;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }

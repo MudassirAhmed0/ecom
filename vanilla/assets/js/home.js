@@ -22,17 +22,25 @@ const owl = $(".owl-carousel").owlCarousel({
 });
 
 $(".owl-carousel__next").click(() => owl.trigger("next.owl.carousel"));
-
 $(".owl-carousel__prev").click(() => owl.trigger("prev.owl.carousel"));
+
+let isNext = true;
+let isPrev = false;
+
 owl.on("changed.owl.carousel", function (event) {
   if ($(".owl-next").hasClass("disabled")) {
-    $(".flipIt").addClass("rotate-[180deg]");
-    $(".flipIt2").removeClass("owl-carousel__next");
-    $(".flipIt2").click(() => owl.trigger("prev.owl.carousel"));
+    isNext = false;
+    meraRight.classList.add("opacity-0");
+    meraRight.classList.add("pointer-events-none");
+  } else {
+    isNext = true;
   }
   if ($(".owl-prev").hasClass("disabled")) {
-    $(".flipIt").removeClass("rotate-[180deg]");
-    $(".flipIt2").click(() => owl.trigger("next.owl.carousel"));
+    isPrev = false;
+    meraLeft.classList.add("opacity-0");
+    meraLeft.classList.add("pointer-events-none");
+  } else {
+    isPrev = true;
   }
 });
 
@@ -42,17 +50,25 @@ const carouselWrapper = document.querySelector(".carousel-wrapper");
 
 carouselWrapper.addEventListener("mousemove", (e) => {
   if ((window.innerWidth - padding) / 2 > e.clientX) {
-    meraLeft.classList.remove("opacity-0");
-    meraLeft.classList.remove("pointer-events-none");
+    if (!isPrev) {
+      meraLeft.classList.add("opacity-0");
+      meraLeft.classList.add("pointer-events-none");
+    } else {
+      meraLeft.classList.remove("opacity-0");
+      meraLeft.classList.remove("pointer-events-none");
+    }
     meraRight.classList.add("opacity-0");
     meraRight.classList.add("pointer-events-none");
-    console.log("left");
   } else {
     meraLeft.classList.add("opacity-0");
     meraLeft.classList.add("pointer-events-none");
-    meraRight.classList.remove("opacity-0");
-    meraRight.classList.remove("pointer-events-none");
-    console.log("right");
+    if (!isNext) {
+      meraRight.classList.add("opacity-0");
+      meraRight.classList.add("pointer-events-none");
+    } else {
+      meraRight.classList.remove("opacity-0");
+      meraRight.classList.remove("pointer-events-none");
+    }
   }
 });
 carouselWrapper.addEventListener("mouseout", () => {
