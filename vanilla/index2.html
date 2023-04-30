@@ -11,9 +11,11 @@
   </head>
   <body>
     <nav
-      class="h-[92px] navBoxShadow md:h-[5.72916666667vw] bg-white px-[8.88324873096vw] md:px-[5.88541666667vw] flex items-center"
+      class="max-h-[144px] z-[55] fixed w-full transition-all duration-[300ms] top-0 left-0 md:max-h-[5.72916666667vw] bg-white flex flex-col md:flex-row items-center"
     >
-      <div class="ml-[1.45833333333vw] flex items-center w-full">
+      <div
+        class="ml-[1.45833333333vw] px-[8.88324873096vw] md:px-[5.88541666667vw] flex items-center w-full h-[92px] md:h-[5.72916666667vw]"
+      >
         <a href="./" class="w-[11.385786802vw] md:w-[13.125vw]">
           <img
             src="./assets/images/icons/logo.svg"
@@ -27,7 +29,7 @@
           />
         </a>
         <ul
-          class="flex items-center gap-x-[9.13705583756vw] md:gap-x-[2.60416666667vw] ml-[11.6751269036vw] md:ml-[4.375vw] uppercase font-[700] text-[3.55329949239vw] tracking-[0.0888324873vw] md:text-[0.83333333333vw] md:tracking-[0.04166666666vw]"
+          class="hidden md:flex items-center gap-x-[9.13705583756vw] md:gap-x-[2.60416666667vw] ml-[11.6751269036vw] md:ml-[4.375vw] uppercase font-[700] text-[3.55329949239vw] tracking-[0.0888324873vw] md:text-[0.83333333333vw] md:tracking-[0.04166666666vw]"
         >
           <li class="group relative">
             <span class="cursor-pointer hidden md:block">Find Talent</span>
@@ -85,29 +87,31 @@
             class="w-full text-[0.83333333333vw] pb-[0.78125vw] pt-[0.83333333333vw] px-[1.19791666667vw] outline-black flex h-full rounded-[1.30208333333vw] text-[#B3B5BE] border border-[#DADCDE]"
           />
         </form>
-        <ul class="items-center ml-auto hidden md:flex gap-x-[3.02083333333vw]">
+        <ul
+          class="items-center ml-auto flex gap-x-[8.9vw] md:gap-x-[3.02083333333vw]"
+        >
           <li class="relative">
             <span
-              class="w-[0.625vw] h-[0.625vw] right-0 top-[0.15625vw] rounded-[50%] bg-[#FF5151] absolute"
+              class="w-[10px] md:w-[0.625vw] h-[10px] md:h-[0.625vw] right-0 top-[2px] md:top-[0.15625vw] rounded-[50%] bg-[#FF5151] absolute"
             ></span>
             <img
               src="./assets/images/icons/bell.svg"
               alt="Bell"
-              class="w-[1.22552083333vw]"
+              class="w-[23px] md:w-[1.22552083333vw]"
             />
           </li>
           <li class="relative">
             <span
-              class="w-[0.625vw] h-[0.625vw] right-0 top-[0.15625vw] rounded-[50%] bg-[#FF5151] absolute"
+              class="w-[10px] md:w-[0.625vw] h-[10px] md:h-[0.625vw] right-0 top-[2px] md:top-[0.15625vw] rounded-[50%] bg-[#FF5151] absolute"
             ></span>
             <img
               src="./assets/images/icons/message.svg"
               alt="Bell"
-              class="w-[1.22552083333vw]"
+              class="w-[23px] md:w-[1.22552083333vw]"
             />
           </li>
           <li
-            class="relative group cursor-pointer rounded-[50%] w-[2.60416666667vw] h-[2.60416666667vw] border-[0.26041666666vw] border-[#E7E7E7]"
+            class="relative hidden md:block group cursor-pointer rounded-[50%] w-[2.60416666667vw] h-[2.60416666667vw] border-[0.26041666666vw] border-[#E7E7E7]"
           >
             <img
               src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -176,7 +180,7 @@
             </ul>
           </li>
         </ul>
-        <button class="ml-auto md:hidden w-[6.85279187817vw]">
+        <button class="ml-[10.02vw] md:hidden w-[6.85279187817vw]">
           <img
             src="./assets/images/icons/hamburger.svg"
             alt="Hamburger"
@@ -184,6 +188,12 @@
           />
         </button>
       </div>
+      <ul
+        class="md:hidden flex justify-center items-center uppercase gap-x-[20.8651399491vw] text-white tracking-[0.8px] h-[52px] bg-[#0F0F0F] w-full"
+      >
+        <li><a href="#">Find Pros</a></li>
+        <li><a href="#">Find Work</a></li>
+      </ul>
     </nav>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>

@@ -54,19 +54,19 @@ body{
     background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
 }
 .btn{
-    @apply px-[42.5px]  relative md:px-[2.8vw] min-w-[183px] md:min-w-[13.2291666667vw]  leading-[1] transition-all duration-500 uppercase tracking-[0.7px] md:tracking-[0.09375vw] h-[50px] md:h-[3.64583333333vw]  text-[14px] md:text-[0.9375vw]  font-[700] flex items-center justify-center rounded-[35px] md:rounded-[1.82291666667vw] 
+    @apply px-[42.5px]  relative md:px-[2.8vw] min-w-[183px] md:min-w-[13.2291666667vw]  leading-[1] transition-all duration-500 uppercase tracking-[0.7px] md:tracking-[0.09375vw] h-[60px] md:h-[3.64583333333vw]  text-[14px] md:text-[0.9375vw]  font-[700] flex items-center justify-center rounded-[35px] md:rounded-[1.82291666667vw] 
 }
 .btn span{
-    @apply transition-all duration-300
+    @apply transition-transform duration-300 whitespace-nowrap
 }
 .btn img{
-    @apply w-[2vw] right-[2.5vw] transition-all duration-300 opacity-0 absolute
+    @apply w-[1vw] right-[2vw] transition-all duration-300 opacity-0 absolute
 }
 .btn:hover span{
-    @apply transform translate-x-[-1.1vw]
+    @apply transform md:translate-x-[-0.5vw]
 }
 .btn:hover img{
-    @apply opacity-[1] right-[1.8vw]
+    @apply md:opacity-[1] md:right-[1.8vw]
 }
 /* .btn2 { 
   @apply  
@@ -100,7 +100,7 @@ body{
 }
 @media(max-width:768px){
     .bannerHeight{
-        height: calc(100vh - 92px);
+        height: calc(100vh - 144px);
         
         /* max-height: calc(-webkit-fill-available - 92px) */
     }

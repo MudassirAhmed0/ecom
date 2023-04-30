@@ -12,10 +12,10 @@
   </head>
   <body>
     <nav
-      class="max-h-[92px] z-[55] fixed w-full transition-all duration-[300ms] top-0 left-0 md:max-h-[5.72916666667vw] bg-white px-[8.88324873096vw] md:px-[5.88541666667vw] flex items-center"
+      class="max-h-[144px] z-[55] fixed w-full transition-all duration-[300ms] top-0 left-0 md:max-h-[5.72916666667vw] bg-white flex flex-col md:flex-row items-center"
     >
       <div
-        class="ml-[1.45833333333vw] flex items-center w-full h-[92px] md:h-[5.72916666667vw]"
+        class="ml-[1.45833333333vw] px-[8.88324873096vw] md:px-[5.88541666667vw] flex items-center w-full h-[92px] md:h-[5.72916666667vw]"
       >
         <a href="./" class="w-[11.385786802vw] md:w-[13.125vw]">
           <img
@@ -30,7 +30,7 @@
           />
         </a>
         <ul
-          class="flex items-center gap-x-[9.13705583756vw] md:gap-x-[2.60416666667vw] ml-[11.6751269036vw] md:ml-[4.375vw] font-[700] text-[3.55329949239vw] tracking-[0.0888324873vw] md:text-[0.83333333333vw] md:tracking-[0.04166666666vw]"
+          class="hidden md:flex items-center gap-x-[9.13705583756vw] md:gap-x-[2.60416666667vw] ml-[11.6751269036vw] md:ml-[4.375vw] font-[700] text-[3.55329949239vw] tracking-[0.0888324873vw] md:text-[0.83333333333vw] md:tracking-[0.04166666666vw]"
         >
           <li class="group relative">
             <span class="cursor-pointer hidden md:block uppercase"
@@ -131,15 +131,22 @@
           />
         </button>
       </div>
+      <ul
+        class="md:hidden flex justify-center items-center uppercase gap-x-[20.8651399491vw] text-white tracking-[0.8px] h-[52px] bg-[#0F0F0F] w-full"
+      >
+        <li><a href="#">Find Pros</a></li>
+        <li><a href="#">Find Work</a></li>
+      </ul>
     </nav>
+
     <section
-      class="bannerHeight flex items-end overflow-hidden relative mt-[92px] md:mt-[5.72916666667vw]"
+      class="bannerHeight flex items-end overflow-hidden relative mt-[144px] md:mt-[5.72916666667vw]"
     >
       <img
         src="./assets/images/home/banner.webp"
         alt="Banner"
         loading="lazy"
-        class="w-full h-full object-cover absolute pointer-events-none top-[92px] md:top-[0] left-0"
+        class="w-full h-full object-cover absolute pointer-events-none top-[0] left-0"
       />
       <div
         class="mb-[26.7175572519vw] md:mb-[8.28125vw] items-center text-center md:text-left md:items-start flex flex-col text-white relative mx-[10.5597964377vw] md:mr-0 md:ml-[14.6354166667vw]"
@@ -164,7 +171,10 @@
           class="btn gap-x-[4px] bg-[#0F0F0F] group w-[13.0208333333vw] text-white md:bg-white flex items-center justify-center md:text-[#0F0F0F] mt-[7.12468193384vw] md:mt-[2.08333333333vw]"
         >
           <span>Get Started</span>
-          <img src="./assets/images/icons/arrow.svg" alt="Arrow" />
+          <img
+            src="./assets/images/icons/Icon ionic-ios-arrow-round-forward.svg"
+            alt="Arrow"
+          />
         </a>
       </div>
       <span
@@ -204,7 +214,7 @@
         <div class="owl-carousel owl-theme">
           <a
             href="#"
-            class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
+            class="item flex items-end relative h-[329px] md:h-[19.4791666667vw] rounded-[24px] md:rounded-[1.25vw] overflow-hidden"
           >
             <img
               loading="lazy"
@@ -213,7 +223,7 @@
               class="w-full h-full object-cover absolute"
             />
             <span
-              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[320px] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
             <div
               class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
@@ -227,7 +237,7 @@
           </a>
           <a
             href="#"
-            class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
+            class="item flex items-end relative h-[329px] md:h-[19.4791666667vw] rounded-[24px] md:rounded-[1.25vw] overflow-hidden"
           >
             <img
               loading="lazy"
@@ -236,7 +246,7 @@
               class="w-full h-full object-cover absolute"
             />
             <span
-              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[320px] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
             <div
               class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
@@ -250,7 +260,7 @@
           </a>
           <a
             href="#"
-            class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
+            class="item flex items-end relative h-[329px] md:h-[19.4791666667vw] rounded-[24px] md:rounded-[1.25vw] overflow-hidden"
           >
             <img
               loading="lazy"
@@ -259,7 +269,7 @@
               class="w-full h-full object-cover absolute"
             />
             <span
-              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[320px] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
             <div
               class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
@@ -273,7 +283,7 @@
           </a>
           <a
             href="#"
-            class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
+            class="item flex items-end relative h-[329px] md:h-[19.4791666667vw] rounded-[24px] md:rounded-[1.25vw] overflow-hidden"
           >
             <img
               loading="lazy"
@@ -282,7 +292,7 @@
               class="w-full h-full object-cover absolute"
             />
             <span
-              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[320px] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
             <div
               class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
@@ -296,7 +306,7 @@
           </a>
           <a
             href="#"
-            class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
+            class="item flex items-end relative h-[329px] md:h-[19.4791666667vw] rounded-[24px] md:rounded-[1.25vw] overflow-hidden"
           >
             <img
               loading="lazy"
@@ -305,7 +315,7 @@
               class="w-full h-full object-cover absolute"
             />
             <span
-              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[320px] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
             <div
               class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
@@ -319,7 +329,7 @@
           </a>
           <a
             href="#"
-            class="item flex items-end relative h-[19.4791666667vw] rounded-[1.25vw] overflow-hidden"
+            class="item flex items-end relative h-[329px] md:h-[19.4791666667vw] rounded-[24px] md:rounded-[1.25vw] overflow-hidden"
           >
             <img
               loading="lazy"
@@ -328,7 +338,7 @@
               class="w-full h-full object-cover absolute"
             />
             <span
-              class="categorySwiperOverlay h-[81.2182741117vw] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
+              class="categorySwiperOverlay h-[320px] md:h-[11.09375vw] absolute bottom-0 left-0 w-full"
             ></span>
             <div
               class="flex flex-col p-[26px] md:p-[2.44791666667vw] text-white relative"
@@ -344,23 +354,23 @@
         <!-- <span
           class="absolute flipIt2 opacity-0 top-[8vw] right-[20vw] z-[5] rounded-[50%] cursor-pointer owl-carousel__next transition-all duration-[500ms] group-hover:opacity-[1] w-[5.05208333333vw] h-[5.05208333333vw] bg-[#fff] flex items-center justify-center"
           ><img
-            src="./assets/images/icons/arrow.svg"
+            src="./assets/images/icons/Icon ionic-ios-arrow-round-forward.svg"
             alt="Arrow"
             class="w-[2.5vw] flipIt transition-all duration-[500ms]"
         /></span> -->
         <span
           class="absolute meraRight opacity-0 pointer-events-none top-[7vw] right-[10vw] z-[5] rounded-[50%] cursor-pointer owl-carousel__next transition-all duration-[500ms] w-[5.05208333333vw] h-[5.05208333333vw] bg-[#fff] flex items-center justify-center"
           ><img
-            src="./assets/images/icons/arrow.svg"
+            src="./assets/images/icons/Icon ionic-ios-arrow-round-forward.svg"
             alt="Arrow"
-            class="w-[2.5vw] transition-all duration-[500ms]"
+            class="w-[1.2vw] transition-all duration-[500ms]"
         /></span>
         <span
           class="absolute meraLeft opacity-0 pointer-events-none top-[7vw] left-[15vw] z-[5] rounded-[50%] cursor-pointer owl-carousel__prev transition-all duration-[500ms] w-[5.05208333333vw] h-[5.05208333333vw] bg-[#fff] flex items-center justify-center"
           ><img
-            src="./assets/images/icons/arrow.svg"
+            src="./assets/images/icons/Icon ionic-ios-arrow-round-forward.svg"
             alt="Arrow"
-            class="w-[2.5vw] transition-all duration-[500ms] transform rotate-[-180deg]"
+            class="w-[1.2vw] transition-all duration-[500ms] transform rotate-[-180deg]"
         /></span>
       </div>
     </section>
@@ -445,7 +455,10 @@
           <div class="hidden md:block">
             <a href="" class="btn bg-[#0F0F0F] text-white">
               <span>Start Browsing</span>
-              <img src="./assets/images/icons/arrow-white.svg" alt="Arrow" />
+              <img
+                src="./assets/images/icons/Icon ionic-ios-arrow-round-forward-white.svg"
+                alt="Arrow"
+              />
             </a>
           </div>
         </div>
@@ -481,7 +494,10 @@
             class="btn bg-[#0F0F0F] text-white"
           >
             <span> Hire Talents</span>
-            <img src="./assets/images/icons/arrow-white.svg" alt="Arrow" />
+            <img
+              src="./assets/images/icons/Icon ionic-ios-arrow-round-forward-white.svg"
+              alt="Arrow"
+            />
           </button>
         </div>
       </div>
@@ -655,7 +671,7 @@
       class="relative md:h-[39.0625vw] justify-center flex-wrap md:flex-nowrap flex text-center bg-[#FBFBFC] gap-y-[19px] z-[5]"
     >
       <div
-        class="w-[91.6030534351vw] md:w-[50%] min-h-[82.2335025381vw] md:min-h-[auto] h-full flex items-center justify-center pb-[1.2vw] bg-[#F4F4F7] md:bg-transparent transform transition-all duration-[500ms] md:hover:bg-[#F4F4F7]"
+        class="w-[91.6030534351vw] md:w-[50%] min-h-[82.2335025381vw] group md:min-h-[auto] h-full flex items-center justify-center pb-[1.2vw] bg-[#F4F4F7] md:bg-transparent transform transition-all duration-[500ms] md:hover:bg-[#F4F4F7]"
       >
         <div
           data-aos="fade"
@@ -669,15 +685,18 @@
             nonumy eirmod tempor invidunt ut labore et dolore
           </p>
           <button
-            class="btn bg-[#0F0F0F] text-[white] md:bg-transparent md:text-[#0F0F0F] md:border md:border-black mt-[19px] md:mt-[2.34375vw]"
+            class="btn bg-[#0F0F0F] text-[white] group-hover:text-[#fff] group-hover:bg-[#0F0F0F] md:bg-[#FBFBFC] md:text-[#0F0F0F] md:border md:border-black mt-[19px] md:mt-[2.34375vw]"
           >
             <span>HIRE A TALENT</span>
-            <img src="./assets/images/icons/arrow.svg" alt="Arrow" />
+            <img
+              src="./assets/images/icons/Icon ionic-ios-arrow-round-forward-white.svg"
+              alt="Arrow"
+            />
           </button>
         </div>
       </div>
       <div
-        class="w-[91.6030534351vw] md:w-[50%] min-h-[82.2335025381vw] md:min-h-[auto] h-full flex items-center justify-center pb-[1.2vw] bg-[#F4F4F7] md:bg-transparent transform transition-all duration-[500ms] md:hover:bg-[#F4F4F7]"
+        class="w-[91.6030534351vw] md:w-[50%] min-h-[82.2335025381vw] group md:min-h-[auto] h-full flex items-center justify-center pb-[1.2vw] bg-[#F4F4F7] md:bg-transparent transform transition-all duration-[500ms] md:hover:bg-[#F4F4F7]"
       >
         <div
           data-aos="fade"
@@ -692,10 +711,13 @@
             nonumy eirmod tempor invidunt ut labore et dolore
           </p>
           <button
-            class="btn bg-[#0F0F0F] text-[white] mt-[19px] md:mt-[2.34375vw]"
+            class="btn bg-[#0F0F0F] text-[white] group-hover:text-[#fff] group-hover:bg-[#0F0F0F] md:bg-[#FBFBFC] md:text-[#0F0F0F] md:border md:border-black mt-[19px] md:mt-[2.34375vw]"
           >
             <span>Get Hired</span>
-            <img src="./assets/images/icons/arrow-white.svg" alt="Arrow" />
+            <img
+              src="./assets/images/icons/Icon ionic-ios-arrow-round-forward-white.svg"
+              alt="Arrow"
+            />
           </button>
         </div>
       </div>
@@ -709,27 +731,27 @@
         >
           Categories
         </h5>
-        <ul class="para flex flex-col mr-[6.5vw]">
+        <ul class="para flex flex-col mr-[6.5vw] underline">
           <li><a href="#">Models</a></li>
           <li><a href="#" class="pt-[1.2vw] block">Photographers</a></li>
           <li><a href="#" class="pt-[1.2vw] block">Film & Video</a></li>
           <li><a href="#" class="pt-[1.2vw] block">Artists</a></li>
           <li><a href="#" class="pt-[1.2vw] block">Actors</a></li>
         </ul>
-        <ul class="para flex flex-col mr-[8.26315789474vw]">
+        <ul class="para flex flex-col mr-[8.26315789474vw] underline">
           <li><a href="#">Influencers</a></li>
           <li><a href="#" class="pt-[1.2vw] block">Hair Stylists</a></li>
           <li><a href="#" class="pt-[1.2vw] block">Makeup Artists</a></li>
           <li><a href="#" class="pt-[1.2vw] block">Agencies</a></li>
         </ul>
         <h5 class="text-[1.5625vw] font-[700] mr-[6.35416666667vw]">Company</h5>
-        <ul class="para flex flex-col mr-[6.77083333333vw]">
+        <ul class="para flex flex-col mr-[6.77083333333vw] underline">
           <li><a href="#">About</a></li>
           <li><a href="#" class="pt-[1.2vw] block">Careers</a></li>
           <li><a href="#" class="pt-[1.2vw] block">Memberships</a></li>
           <li><a href="#" class="pt-[1.2vw] block">Trust & Safety</a></li>
         </ul>
-        <ul class="para flex flex-col mr-[6.77083333333vw]">
+        <ul class="para flex flex-col mr-[6.77083333333vw] underline">
           <li>
             <a href="#" class="flex gap-x-[0.5vw]"
               ><img
