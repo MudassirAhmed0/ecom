@@ -3472,7 +3472,7 @@ body{
 
 @media(max-width:768px){
   .bannerHeight{
-    height: 100dvh;
+    height: 100svh;
     /* max-height: -webkit-fill-available; */
     /* max-height: calc(-webkit-fill-available - 144px) */
   }
