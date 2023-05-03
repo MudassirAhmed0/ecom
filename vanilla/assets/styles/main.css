@@ -647,10 +647,6 @@ video {
   left: 1.5vw;
 }
 
-.left-\[1\.8vw\] {
-  left: 1.8vw;
-}
-
 .left-\[15vw\] {
   left: 15vw;
 }
@@ -709,10 +705,6 @@ video {
 
 .top-\[2\.60416666667vw\] {
   top: 2.60416666667vw;
-}
-
-.top-\[2\.90416666667vw\] {
-  top: 2.90416666667vw;
 }
 
 .top-\[2px\] {
@@ -805,6 +797,10 @@ video {
 
 .mb-\[0\.36458333333vw\] {
   margin-bottom: 0.36458333333vw;
+}
+
+.mb-\[12vh\] {
+  margin-bottom: 12vh;
 }
 
 .mb-\[1vw\] {
@@ -2727,6 +2723,10 @@ video {
   font-size: 10.1781170483vw;
 }
 
+.text-\[11\.1781170483vw\] {
+  font-size: 11.1781170483vw;
+}
+
 .text-\[14px\] {
   font-size: 14px;
 }
@@ -2769,10 +2769,6 @@ video {
 
 .text-\[9\.375vw\] {
   font-size: 9.375vw;
-}
-
-.text-\[11\.1781170483vw\] {
-  font-size: 11.1781170483vw;
 }
 
 .font-\[100\] {
@@ -3481,7 +3477,7 @@ body{
 @media(max-width:768px){
   .bannerHeight{
     height: calc(100vh - 144px);
-    /* max-height: calc(-webkit-fill-available - 92px) */
+    max-height: calc(-webkit-fill-available - 144px)
   }
 
   .swiper-button-next, .swiper-button-prev {
@@ -4196,14 +4192,6 @@ body{
 
   .group:hover .md\:group-hover\:left-\[-9\.21875vw\] {
     left: -9.21875vw;
-  }
-
-  .group:hover .md\:group-hover\:left-\[1\.5vw\] {
-    left: 1.5vw;
-  }
-
-  .group:hover .md\:group-hover\:top-\[2\.60416666667vw\] {
-    top: 2.60416666667vw;
   }
 
   .group:hover .md\:group-hover\:top-\[3\.60416666667vw\] {
