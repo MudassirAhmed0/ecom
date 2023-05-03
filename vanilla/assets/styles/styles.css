@@ -100,8 +100,8 @@ body{
 }
 @media(max-width:768px){
     .bannerHeight{
-        height: 100vh;
-        max-height: -webkit-fill-available;
+        height: 100dvh;
+        /* max-height: -webkit-fill-available; */
         /* max-height: calc(-webkit-fill-available - 144px) */
     }
     
