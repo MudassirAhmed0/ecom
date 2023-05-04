@@ -1,7 +1,9 @@
 let isDesktop = window.innerWidth > 768;
 let padding = isDesktop && (window.innerWidth / 100) * 8.4375;
 let margin = isDesktop ? (window.innerWidth / 100) * 1.19791666667 : 15;
-const owl = $(".owl-carousel").owlCarousel({
+
+const owl = $(".owl-carousel");
+owl.owlCarousel({
   loop: !isDesktop,
   nav: true,
   center: !isDesktop,
@@ -86,5 +88,7 @@ window.addEventListener("resize", () => {
   isDesktop = window.innerWidth > 768;
   padding = isDesktop && (window.innerWidth / 100) * 8.4375;
   margin = isDesktop ? (window.innerWidth / 100) * 1.19791666667 : 15;
-  owl.onResize();
+  owl.data("owl.carousel").options.stagePadding = padding;
+  owl.data("owl.carousel").options.margin = margin;
+  owl.trigger("refresh.owl.carousel");
 });
